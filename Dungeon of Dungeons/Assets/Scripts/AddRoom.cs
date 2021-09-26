@@ -1,0 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AddRoom : MonoBehaviour
+{
+    RoomTemplates templates;
+
+    private void Start()
+    {
+        templates = GameObject.FindObjectOfType<RoomTemplates>().GetComponent<RoomTemplates>();
+        templates.rooms.Add(this.gameObject);
+    }
+}
