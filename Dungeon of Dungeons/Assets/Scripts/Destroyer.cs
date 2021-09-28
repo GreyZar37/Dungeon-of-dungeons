@@ -6,7 +6,7 @@ public class Destroyer : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name != "Player")
+        if(other.gameObject.tag == "Spawnpoint")
         {
             Destroy(other.gameObject);
         }
