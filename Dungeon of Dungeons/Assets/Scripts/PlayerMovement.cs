@@ -6,37 +6,40 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 1f;
     public float mouseSensitivity = 100f;
-    public Transform cam, lean, sword;
-    public CharacterController characterController;
     public float gravity = -9.82f;
-    public Transform groundCheck;
     public float groundDistance = 0.4f;
-    public LayerMask groundMask;
+
     public float jumpHeight;
     public float swervingAngle, swervespeed;
 
     float vertical, mouseVertical;
     float horizontal, mouseHorizontal;
     float xRotation = 0f;
+
+    float currentSwervingAngle;
+
+    public Transform groundCheck;
+   
+    public LayerMask groundMask;
+  
+
+
+    public Transform cam, lean, sword;
+    public CharacterController characterController;
+
+    
     Vector3 move;
     Vector3 velocity;
     bool isGrounded;
-    float currentSwervingAngle;
+    
     bool swerveRight=true;
 
 
-
-    // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private void FixedUpdate()
     {
@@ -109,6 +112,5 @@ public class PlayerMovement : MonoBehaviour
             lean.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
         }
     }
-
 
 }
