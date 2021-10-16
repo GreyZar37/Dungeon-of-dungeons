@@ -682,6 +682,7 @@ GameObject:
   - component: {fileID: 1064749130}
   - component: {fileID: 1064749129}
   - component: {fileID: 1064749133}
+  - component: {fileID: 1064749134}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -786,6 +787,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1064749134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064749128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c76f736adc5494ca4b221ed4d0afca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1169531744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2620561750350066845, guid: 3bfcb5fb381af264b9660c6fd598cd35, type: 3}
@@ -1006,6 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4111ce10119ab468b81451f0d41015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!1001 &2108474953
 PrefabInstance:
   m_ObjectHideFlags: 0
