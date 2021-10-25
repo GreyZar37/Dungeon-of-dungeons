@@ -45,6 +45,11 @@ public class PlayerAttack : MonoBehaviour
                     attackCombo = 2;
                     isAttacking = true;
                     break;
+                case 2:
+                    attackCombo = 3;
+                    isAttacking = true;
+                    break;
+
 
                 default:
                     break;
